@@ -4,3 +4,8 @@ from .models import Post, Category
 
 admin.site.register(Post)
 admin.site.register(Category)
+
+
+class ArticleAdmin(admin.ModelAdmin):
+    class Media:
+        js = ('/path/tiny_mce/tiny_mce.js')
